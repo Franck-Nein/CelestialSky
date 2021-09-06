@@ -94,8 +94,8 @@ L.Control.ViewMeta = L.Control.extend({
         let center = this.map.getCenter();
         let bounds = this.map.getBounds();
 
-        let latStr = this.formatNumber(center.lat*-1);
-        let lngStr = this.formatNumber(center.lng*-1);
+        let latStr = this.formatNumber((center.lat*-1)-3584);
+        let lngStr = this.formatNumber((center.lng*-1)+2048);
 
         let nbStr = this.formatNumber(bounds.getNorth());
         let sbStr = this.formatNumber(bounds.getSouth());
